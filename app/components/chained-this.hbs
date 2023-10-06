@@ -1,0 +1,17 @@
+<p>we can chain this to itself:</p>
+<pre>
+  <code>
+  // chained-this.js
+  import Component from '@glimmer/component';
+
+  export default class CounterComponent extends Component {
+    count = 99;
+  }
+
+  // chained-this.hbs
+  {this.this.this.count}
+  </code>
+</pre>
+
+<p>And it's working, that's good! but also, no red squigglies! 😬</p>
+<p>count: {{this.this.this.count}} </p>
